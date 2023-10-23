@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+:root{
+--color: rgb(49, 49, 49); 
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+.container {
+  text-align: center;
+  color: #fffff8;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(bg1cpy4.JPG);
+  background-size: cover;
+  background-position: center;
+  
+/*  this is where the magic happens:  */
+  background-attachment: fixed;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+p {
+  max-width: 52ch;
+  line-height: 1.5;
+  padding: 1em;
+  text-align: center;
+}
+
+.container > a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: var(--color);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+}
+
+.blank {
+  width: 100%;
+  min-height: 50vh;
+  background-color: var(--color);
+  background-image: url(bln2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.card{
+  justify-content: center;
+}
+
+.card > a {
+  display: inline-block;
+  padding: 1em 2.5em;
+  background-color: var(--color);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+  margin-bottom: 2em;
+  text-align: center;
+  margin-left: 70px;
+}
+
+.item {
+  display: flex;
+  max-width: 320px;
+  background-color: white;;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .5em;
+  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  
+}
+
+.img{
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  border-radius: .3em;
+  padding: 10px;
+  
+}
+
+.img img{
+  width: 280px;
+  height: 180px;
+  margin-top: 1.5em;
+}
+
+.containersecond {
+  background-image: url(bg2\ cpy.jpg);
+  min-height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.6em;
+  padding: 150px;
+  background-attachment: fixed;
+}
+
+.blank1 {
+  width: 100%;
+  min-height: 20vh;
+  margin-top: 0px;
+  background-color: #1a1a1a;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  display: flex;
+}
+
+.blank1 .footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+}
+
+.blank1 .footer .contact{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top:4vh;
+  font-size: 1em;
+}
+
+
+.blank1 .footer ul li a{
+  display: flexbox;
+  align-items: center;
+  text-decoration: none;
+  color:#fffff8;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.blank1 .footer h5{
+  color: #fffff8;
+  position: relative;
+  top: 1.5em;
+  display: inline-block;
+  text-align: center;
+  font-weight: lighter;
+}
+
+
+
+/* Small screens
+ @media screen and (max-width: 767px) {
+  .container, .blank, .blank1 {
+    padding: 20px;
+  }
+  
+  .container > a, .card > a {
+    padding: 0.8em 2.2em;
+    font-size: 0.75rem;
+  }
+
+  .containersecond {
+    flex-direction: column;
+    gap: 1em;
+    padding: 20px;
+  }
+
+  .img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer .contact {
+    width: 80%;
+  }
+
+  .blank1 .footer ul li a {
+    font-size: 0.9em;
+  } 
+ } 
+
+/* Medium screens */
+/* @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container, .blank, .blank1 {
+    padding: 40px;
+  }
+  
+  .container > a, .card > a {
+    padding: 1em 3em;
+    font-size: 0.9rem;
+  }
+
+  .containersecond {
+    gap: 2em;
+    padding: 80px;
+  }
+} */
+
+/* Large screens */
+/* @media screen and (min-width: 1024px) {
+  .container, .blank, .blank1 {
+    padding: 60px;
+  }
+  
+  .container > a, .card > a {
+    padding: 1em 3.5em;
+    font-size: 1rem;
+  }
+
+  .containersecond {
+    padding: 150px;
+  }
+}  */
